@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Driver {
   private static final String[] DEMO_FILES = {
-          "project_2/inputs/bad.json",
-          "project_2/inputs/simple.json",
-          "project_2/inputs/newsapi.json"
+          "project_3/inputs/bad.json",
+          "project_3/inputs/simple.json",
+          "project_3/inputs/newsapi.json"
   };
 
   private final NewsParser parser;
