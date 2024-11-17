@@ -12,10 +12,10 @@ import java.util.logging.*;
  * and log file locations. It ensures consistent logging behavior across the application.
  */
 public class LoggerConfiguration {
-    private static LoggerConfiguration instance;
     private static final String LOG_DIRECTORY = "project_3/logs";
     private static final String LOG_FILE_NAME = "parser.log";
     private static final String LOGGER_NAME = "NewsAPILogger";
+    private static LoggerConfiguration instance;
     private final Logger logger;
     private FileHandler fileHandler;
 

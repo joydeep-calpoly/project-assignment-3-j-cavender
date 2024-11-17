@@ -4,8 +4,8 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * Represents a news article in the NewsAPI format with all its data.
- * Implements the Validatable interface for content validation.
+ * Represents a news article in the NewsAPI format with all its data. Implements the Validatable
+ * interface for content validation.
  */
 public class Article implements Validatable {
   private final String title;
@@ -19,14 +19,14 @@ public class Article implements Validatable {
 
   @JsonCreator
   Article(
-          @JsonProperty("title") String title,
-          @JsonProperty("description") String description,
-          @JsonProperty("url") String url,
-          @JsonProperty("publishedAt") String publishedAt,
-          @JsonProperty("source") Source source,
-          @JsonProperty("author") String author,
-          @JsonProperty("urlToImage") String urlImage,
-          @JsonProperty("content") String content) {
+      @JsonProperty("title") String title,
+      @JsonProperty("description") String description,
+      @JsonProperty("url") String url,
+      @JsonProperty("publishedAt") String publishedAt,
+      @JsonProperty("source") Source source,
+      @JsonProperty("author") String author,
+      @JsonProperty("urlToImage") String urlImage,
+      @JsonProperty("content") String content) {
     this.title = title;
     this.description = description;
     this.url = url;
@@ -79,10 +79,14 @@ public class Article implements Validatable {
 
   @Override
   public String toString() {
-    return "Title: " + title +
-            "\nDescription: " + description +
-            "\nURL: " + url +
-            "\nPublished: " + publishedAt +
-            "\n";
+    return "Title: "
+        + title
+        + "\nDescription: "
+        + description
+        + "\nURL: "
+        + url
+        + "\nPublished: "
+        + publishedAt
+        + "\n";
   }
 }

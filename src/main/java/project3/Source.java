@@ -3,9 +3,7 @@ package project3;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-/**
- * Represents a news source with its identifying information.
- */
+/** Represents a news source with its identifying information. */
 public class Source {
   private final String id;
   private final String name;

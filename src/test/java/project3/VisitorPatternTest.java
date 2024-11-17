@@ -15,14 +15,13 @@ import static org.junit.jupiter.api.Assertions.*;
  * as well as the factory methods for creating these components.
  */
 class VisitorPatternTest {
+    @TempDir
+    Path tempDir;
     private ParserVisitor newsAPIParser;
     private ParserVisitor simpleParser;
     private SourceContext newsAPIFileContext;
     private SourceContext simpleFileContext;
     private SourceContext urlContext;
-
-    @TempDir
-    Path tempDir;
 
     /**
      * Sets up the test environment before each test.
